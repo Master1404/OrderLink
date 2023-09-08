@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "497170494471",
+    "project_id": "orderlinkdb",
+    "storage_bucket": "orderlinkdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497170494471:android:3f2f1012932f5c9133e6a2",
+        "android_client_info": {
+          "package_name": "OrderLinkN.Android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497170494471-f59gdji3q3bu7o7j72k6raj8o7bvsqi8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "OrderLinkN.Android",
+            "certificate_hash": "6cb01b63c1b286e23bb41cba0311d0530bdbac78"
+          }
+        },
+        {
+          "client_id": "497170494471-6jbjm2s96b49vttiv5ull9kvvio1fuea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMpqr10YoGV-VCjjdubhG6NvM3sDlvsro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497170494471-6jbjm2s96b49vttiv5ull9kvvio1fuea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

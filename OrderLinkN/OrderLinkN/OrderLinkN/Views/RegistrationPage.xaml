@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="OrderLinkN.Views.RegistrationPage">
+    
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Entry Placeholder="Full Name" x:Name="FullNameEntry" WidthRequest="200" HorizontalOptions="Center" Text="{Binding FullName}" />
+        <Entry Placeholder="Username/Email" x:Name="UsernameEmailEntry" WidthRequest="200" HorizontalOptions="Center" Text="{Binding Email}" />
+        <Entry Placeholder="Phone Number" x:Name="PhoneNumberEntry" WidthRequest="200" HorizontalOptions="Center" Text="{Binding PhoneNumber}" />
+        <Entry Placeholder="Company Name" x:Name="CompanyNameEntry" WidthRequest="200" HorizontalOptions="Center" Text="{Binding CompanyName}"/>
+        <Entry Placeholder="Password" x:Name="PasswordEntry" WidthRequest="200" HorizontalOptions="Center" IsPassword="True" Text="{Binding Password}" />
+        <Entry Placeholder="Confirm Password" x:Name="ConfirmPasswordEntry" WidthRequest="200" HorizontalOptions="Center" IsPassword="True" Text="{Binding ConfirmPassword}" />
+        <Button Text="Sign Up" Command="{Binding SignUpCommand}" WidthRequest="150" HeightRequest="40" IsEnabled="{Binding ArePasswordsMatching}" />
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Already a member? " />
+                    <Span Text="Sign In" TextColor="Blue" TextDecorations="Underline">
+                        <Span.GestureRecognizers>
+                            <!-- Здесь используем команду SignInCommand из RegistrationViewModel -->
+                            <TapGestureRecognizer Command="{Binding SignInCommand}" />
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+</ContentPage>

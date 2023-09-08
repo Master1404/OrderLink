@@ -1,0 +1,18 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrderLinkN.Views.FormPage"
+             xmlns:viewmodels="clr-namespace:OrderLinkN.ViewModels"
+             x:DataType ="viewmodels:FormViewModel">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label Text="Complete your Profile" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Address" WidthRequest="300" x:Name="AddressEntry" Text="{Binding Address}" />
+        <Entry Placeholder="State" WidthRequest="300" x:Name="StateEntry" Text="{Binding State}"/>
+        <Entry Placeholder="Country (Default – India)" WidthRequest="300" x:Name="CountryEntry"  Text="{Binding Country}"/>
+        <Entry Placeholder="Area Code / PIN" WidthRequest="300" x:Name="AreaCodeEntry" Text="{Binding AreaCode}" />
+        <Entry Placeholder="GST Number" WidthRequest="300" x:Name="GSTNumberEntry" Text="{Binding GSTNumber}" />
+
+        <Button Text="Submit" Command="{Binding SubmitCommand}" WidthRequest="150" HeightRequest="40" />
+    </StackLayout>
+</ContentPage>
